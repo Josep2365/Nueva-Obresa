@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Obresa | Obras</title>
+  <link rel="icon" type="image/png" href="img/home/logo.png">
+  <meta name="author" content="Josep Fayos Miñana">
+  <meta name="keywords" content="obresa, construcción, gandia, reformas, rehabilitacion, interiores, franquicias, hosteleras">
+  <meta name="description" content="Empresa de construcción líder en la safor con las técnicas más avanzadas en la ejecución de sus obras.">
+  <meta property="og:image" content="img/home/logo.png">
+  <!-- Normalize -->
+  <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css" />
+  <!-- Font Awesome 5.4.1 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous" />
+  <!-- Tailswinds -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- VueJS -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <!-- Lodash -->
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Axios -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="js/porfolio.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <header class="header--porfolio">
+      <!-- SPINER -->
+      <section class="loading" v-if="loading">
+        <div class="lds-spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+      <nav class="menu">
+        <div class="logo--header">
+          <img src="img/home/logo.png" alt="">
+        </div>
+        <!-- NAV BAR BUTTON -->
+        <button class="nav-bar" @click="isNavBarCerrado = !isNavBarCerrado"><i class="fas fa-bars"></i></button>
+        <!-- ul ENLACES -->
+        <ul class="menu-enlaces" :class="{menuEnlacesAbierto: isNavBarCerrado}">
+          <li><a href="index.php">Inicio</a></li>
+          <li><a href="index.php">Contacto</a></li>
+          <li><a href="index.php">Sobre Obresa</a></li>
+          <li><a href="index.php">Noticias</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="porfolio">
+        <div class="porfolio--tittle">
+          <h1>Portafolio <br> <span>Construyendo tu futuro</span></h1>
+        </div>
+        <nav class="porfolio-menu">
+          <ul>
+            <li>
+              <a href="#" class="porfolio-menu--iconos" @click="filtro = 'franquicia'">
+                <div class="porfolio-menu--iconos-ico">
+                  <img src="img/iconos/build.png" alt="">
+                </div>
+                <span href="#">Franquicias Hosteleras</span>
+              </a>
+              <a href="#" class="porfolio-menu--iconos" @click="filtro = 'interior'">
+                <div class="porfolio-menu--iconos-ico">
+                  <img src="img/iconos/casa.png" alt="">
+                </div>
+                <span href="#">Reformar e interiores</span>
+              </a>
+              <a href="#" class="porfolio-menu--iconos" @click="filtro = 'fachada'">
+                <div class="porfolio-menu--iconos-ico">
+                  <img src="img/iconos/grua.png" alt="">
+                </div>
+                <span href="#">Rehabilitación de fachadas</span>
+              </a>
+              <a href="#" class="porfolio-menu--iconos" @click="filtro = 'ObraCivil'">
+                <div class="porfolio-menu--iconos-ico">
+                  <img src="img/iconos/obrero.png" alt="">
+                </div>
+                <span href="#">Obra civil e industrial</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <!-------- MODAL ------------->
+      <section class="modal" v-if="obraSeleccionada">
+        <div class="caja--modal">
+          <!-- Vamos a la anterior obra -->
+          <!--<div @click="anteriorObra" class="flecha--anterior-obra"><i class="fas fa-chevron-circle-left"></i></div>-->
+
+          <div class="caja--modal-texto">
+            <h2>{{ obraSeleccionada.name }}</h2>
+            <h5>{{ obraSeleccionada.nameServicio }}</h5>
+            <div class="texto-circles">
+              <i class="fas fa-circle circle-claro"></i>
+              <i class="fas fa-circle circle-medio"></i>
+              <i class="fas fa-circle circle-oscuro"></i>
+            </div>
+          </div>
+          <div class="caja--modal-slider">
+            <div @click="anterior" class="flecha-izquierda"><i class="fas fa-chevron-circle-left"></i></div>
+
+            <img :src="obraSeleccionada.listaImagenes[posicion]" class="slider--imagen">
+            <div @click="siguiente" class="flecha-derecha"><i class="fas fa-chevron-circle-right"></i></div>
+          </div>
+          <div class="modal--button">
+            <button @click="cerrarArticulo" class="modal--button-text">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- IMAGENES PORFOLIO -->
+      <section class="porfolio-images">
+        <div class="porfolio-images--container">
+          <a href="#" class="col" v-for="obra in verFranquicias" @click.prevent="verObra(obra)">
+            <h3>{{ obra.name }}<span>{{ obra.nameServicio }}</span></h3>
+            <img :src="obra.imagenPrincipal" alt="">
+          </a>
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer--logo">
+        <img src="img/home/logo.png" alt="">
+      </div>
+      <div class="footer--info">
+        <h3>Información sobre obresa</h3>
+        <a href="#">Aviso de privacidad</a>
+        <a href="http://www.jyjwebdesign.com/">Desarrollador</a>
+        <a href="#">Preguntas frecuentes</a>
+      </div>
+      <div class="footer--contacto">
+        <h3>Contacto</h3>
+        <span><i class="fas fa-phone"></i><a href="tel:+34 962 851 700">962 851 700</a></span>
+        <span><i class="fas fa-envelope"></i><a href="mailto:info@obresa.es">info@obresa.es</a></span>
+        <span><i class="fas fa-map-marker-alt"></i><a href="https://goo.gl/maps/F8mG1Af8rTR2">Av. de Valencia 37,
+            Gandía,
+            Valencia, 46701</a></span>
+      </div>
+      <div class="footer--redes">
+        <h3>Redes sociales</h3>
+        <a href="https://www.facebook.com/Obresa/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/obresaconstructora/"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

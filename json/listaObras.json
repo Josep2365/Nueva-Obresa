@@ -1,0 +1,423 @@
+{
+    "listaObras": [
+        {
+            "id": 1,
+            "name": "Edificio Baladre",
+            "nameServicio": "rehabilitación de fachadas",
+            "categoria": "fachada",
+            "imagenPrincipal": "img/obras/fachadas/baladre/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/fachadas/baladre/imgPrincipal.jpg",
+                "img/obras/fachadas/baladre/img1.jpg",
+                "img/obras/fachadas/baladre/img2.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Complejo Cancun 4",
+            "nameServicio": "rehabilitación de fachadas",
+            "categoria": "fachada",
+            "imagenPrincipal": "img/obras/fachadas/cancun4/junio/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/fachadas/cancun4/junio/imgPrincipal.jpg",
+                "img/obras/fachadas/cancun4/junio/img1.jpg",
+                "img/obras/fachadas/cancun4/junio/img2.jpg",
+                "img/obras/fachadas/cancun4/junio/img3.jpg",
+                "img/obras/fachadas/cancun4/junio/img4.jpg",
+                "img/obras/fachadas/cancun4/junio/img5.jpg",
+                "img/obras/fachadas/cancun4/junio/img6.jpg"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Complejo Cancun 7 (fase II)",
+            "nameServicio": "rehabilitación de fachadas",
+            "categoria": "fachada",
+            "imagenPrincipal": "img/obras/fachadas/cancun7/faseii/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/fachadas/cancun7/faseii/imgPrincipal.jpg",
+                "img/obras/fachadas/cancun7/faseii/img1.jpg",
+                "img/obras/fachadas/cancun7/faseii/img2.jpg",
+                "img/obras/fachadas/cancun7/faseii/img3.jpg",
+                "img/obras/fachadas/cancun7/faseii/img4.jpg",
+                "img/obras/fachadas/cancun7/faseii/img5.jpg",
+                "img/obras/fachadas/cancun7/faseii/img6.jpg",
+                "img/obras/fachadas/cancun7/faseii/img7.jpg",
+                "img/obras/fachadas/cancun7/faseii/img8.jpg",
+                "img/obras/fachadas/cancun7/faseii/img9.jpg",
+                "img/obras/fachadas/cancun7/faseii/img10.jpg",
+                "img/obras/fachadas/cancun7/faseii/img11.jpg",
+                "img/obras/fachadas/cancun7/faseii/img12.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Complejo Cancun 7 (fase III)",
+            "nameServicio": "rehabilitación de fachadas",
+            "categoria": "fachada",
+            "imagenPrincipal": "img/obras/fachadas/cancun7/faseiii/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/fachadas/cancun7/faseiii/imgPrincipal.jpg",
+                "img/obras/fachadas/cancun7/faseiii/img1.jpg",
+                "img/obras/fachadas/cancun7/faseiii/img2.jpg",
+                "img/obras/fachadas/cancun7/faseiii/img3.jpg",
+                "img/obras/fachadas/cancun7/faseiii/img4.jpg",
+                "img/obras/fachadas/cancun7/faseiii/img5.jpg"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Residencial les Llometes",
+            "nameServicio": "rehabilitación de fachadas",
+            "categoria": "fachada",
+            "imagenPrincipal": "img/obras/fachadas/llometes/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/fachadas/llometes/imgPrincipal.jpg",
+                "img/obras/fachadas/llometes/img1.jpg",
+                "img/obras/fachadas/llometes/img2.jpg",
+                "img/obras/fachadas/llometes/img3.jpg",
+                "img/obras/fachadas/llometes/img4.jpg",
+                "img/obras/fachadas/llometes/img5.jpg",
+                "img/obras/fachadas/llometes/img6.jpg"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Edificio Manacor",
+            "nameServicio": "rehabilitación de fachadas",
+            "categoria": "fachada",
+            "imagenPrincipal": "img/obras/fachadas/manacor/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/fachadas/manacor/imgPrincipal.jpg",
+                "img/obras/fachadas/manacor/img1.jpg",
+                "img/obras/fachadas/manacor/img2.jpg",
+                "img/obras/fachadas/manacor/img3.jpg",
+                "img/obras/fachadas/manacor/img4.jpg",
+                "img/obras/fachadas/manacor/img5.jpg",
+                "img/obras/fachadas/manacor/img6.jpg",
+                "img/obras/fachadas/manacor/img7.jpg",
+                "img/obras/fachadas/manacor/img8.jpg",
+                "img/obras/fachadas/manacor/img9.jpg",
+                "img/obras/fachadas/manacor/img10.jpg",
+                "img/obras/fachadas/manacor/img11.jpg",
+                "img/obras/fachadas/manacor/img12.jpg",
+                "img/obras/fachadas/manacor/img13.jpg"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Dominos Vinaroz",
+            "nameServicio": "Franquicias hosteleras",
+            "categoria": "franquicia",
+            "imagenPrincipal": "img/obras/franquicias/dominos-Vinaros/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/franquicias/dominos-Vinaros/imgPrincipal.jpg",
+                "img/obras/franquicias/dominos-Vinaros/img1.jpg",
+                "img/obras/franquicias/dominos-Vinaros/img2.jpg",
+                "img/obras/franquicias/dominos-Vinaros/img3.jpg",
+                "img/obras/franquicias/dominos-Vinaros/img4.jpg",
+                "img/obras/franquicias/dominos-Vinaros/img5.jpg",
+                "img/obras/franquicias/dominos-Vinaros/img6.jpg",
+                "img/obras/franquicias/dominos-Vinaros/img7.jpg",
+                "img/obras/franquicias/dominos-Vinaros/img8.jpg",
+                "img/obras/franquicias/dominos-Vinaros/img9.jpg",
+                "img/obras/franquicias/dominos-Vinaros/img10.jpg"
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Dominos Alzira",
+            "nameServicio": "Franquicias hosteleras",
+            "categoria": "franquicia",
+            "imagenPrincipal": "img/obras/franquicias/dominos-alzira/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/franquicias/dominos-alzira/imgPrincipal.jpg",
+                "img/obras/franquicias/dominos-alzira/img1.jpg",
+                "img/obras/franquicias/dominos-alzira/img2.jpg",
+                "img/obras/franquicias/dominos-alzira/img3.jpg",
+                "img/obras/franquicias/dominos-alzira/img4.jpg",
+                "img/obras/franquicias/dominos-alzira/img5.jpg",
+                "img/obras/franquicias/dominos-alzira/img6.jpg"
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Dominos Córdoba",
+            "nameServicio": "Franquicias hosteleras",
+            "categoria": "franquicia",
+            "imagenPrincipal": "img/obras/franquicias/dominos-cordoba/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/franquicias/dominos-cordoba/imgPrincipal.jpg",
+                "img/obras/franquicias/dominos-cordoba/img1.jpg",
+                "img/obras/franquicias/dominos-cordoba/img2.jpg",
+                "img/obras/franquicias/dominos-cordoba/img3.jpg",
+                "img/obras/franquicias/dominos-cordoba/img4.jpg",
+                "img/obras/franquicias/dominos-cordoba/img5.jpg",
+                "img/obras/franquicias/dominos-cordoba/img6.jpg",
+                "img/obras/franquicias/dominos-cordoba/img7.jpg",
+                "img/obras/franquicias/dominos-cordoba/img8.jpg",
+                "img/obras/franquicias/dominos-cordoba/img9.jpg",
+                "img/obras/franquicias/dominos-cordoba/img10.jpg"
+            ]
+        },
+        {
+            "id": 10,
+            "name": "Dominos Tudela",
+            "nameServicio": "Franquicias hosteleras",
+            "categoria": "franquicia",
+            "imagenPrincipal": "img/obras/franquicias/dominos-tudela/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/franquicias/dominos-tudela/imgPrincipal.jpg",
+                "img/obras/franquicias/dominos-tudela/img1.jpg",
+                "img/obras/franquicias/dominos-tudela/img2.jpg",
+                "img/obras/franquicias/dominos-tudela/img3.jpg",
+                "img/obras/franquicias/dominos-tudela/img4.jpg",
+                "img/obras/franquicias/dominos-tudela/img5.jpg",
+                "img/obras/franquicias/dominos-tudela/img6.jpg"
+            ]
+        },
+        {
+            "id": 11,
+            "name": "Dominos Villareal",
+            "nameServicio": "Franquicias hosteleras",
+            "categoria": "franquicia",
+            "imagenPrincipal": "img/obras/franquicias/dominos-villareal/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/franquicias/dominos-villareal/imgPrincipal.jpg",
+                "img/obras/franquicias/dominos-villareal/img1.jpg",
+                "img/obras/franquicias/dominos-villareal/img2.jpg",
+                "img/obras/franquicias/dominos-villareal/img4.jpg",
+                "img/obras/franquicias/dominos-villareal/img5.jpg"
+            ]
+        },
+        {
+            "id": 12,
+            "name": "Dominos Alcalá de Guadaria",
+            "nameServicio": "Franquicias hosteleras",
+            "categoria": "franquicia",
+            "imagenPrincipal": "img/obras/franquicias/dominos-Alcala-Guadaria/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/franquicias/dominos-Alcala-Guadaria/imgPrincipal.jpg",
+                "img/obras/franquicias/dominos-Alcala-Guadaria/img1.jpg",
+                "img/obras/franquicias/dominos-Alcala-Guadaria/img2.jpg",
+                "img/obras/franquicias/dominos-Alcala-Guadaria/img3.jpg",
+                "img/obras/franquicias/dominos-Alcala-Guadaria/img4.jpg",
+                "img/obras/franquicias/dominos-Alcala-Guadaria/img5.jpg",
+                "img/obras/franquicias/dominos-Alcala-Guadaria/img6.jpg"
+            ]
+        },
+        {
+            "id": 13,
+            "name": "Fooster's Tenefire",
+            "nameServicio": "Franquicias hosteleras",
+            "categoria": "franquicia",
+            "imagenPrincipal": "img/obras/franquicias/fooster-tenerife/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/franquicias/fooster-tenerife/imgPrincipal.jpg",
+                "img/obras/franquicias/fooster-tenerife/img1.jpg",
+                "img/obras/franquicias/fooster-tenerife/img2.jpg",
+                "img/obras/franquicias/fooster-tenerife/img3.jpg",
+                "img/obras/franquicias/fooster-tenerife/img4.jpg",
+                "img/obras/franquicias/fooster-tenerife/img5.jpg",
+                "img/obras/franquicias/fooster-tenerife/img6.jpg",
+                "img/obras/franquicias/fooster-tenerife/img7.jpg",
+                "img/obras/franquicias/fooster-tenerife/img8.jpg",
+                "img/obras/franquicias/fooster-tenerife/img9.jpg"
+            ]
+        },
+        {
+            "id": 14,
+            "name": "Vivienda CG",
+            "nameServicio": "Reformas e interiores",
+            "categoria": "interior",
+            "imagenPrincipal": "img/obras/interiores/colomets/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/interiores/colomets/imgPrincipal.jpg",
+                "img/obras/interiores/colomets/img1.jpg",
+                "img/obras/interiores/colomets/img2.jpg",
+                "img/obras/interiores/colomets/img3.jpg",
+                "img/obras/interiores/colomets/img4.jpg",
+                "img/obras/interiores/colomets/img5.jpg",
+                "img/obras/interiores/colomets/img6.jpg",
+                "img/obras/interiores/colomets/img7.jpg",
+                "img/obras/interiores/colomets/img8.jpg"
+            ]
+        },
+        {
+            "id": 15,
+            "name": "Vivienda GV",
+            "nameServicio": "Reformas e interiores",
+            "categoria": "interior",
+            "imagenPrincipal": "img/obras/interiores/granvia/imgPrincipal.jpeg",
+            "listaImagenes": [
+                "img/obras/interiores/granvia/imgPrincipal.jpeg",
+                "img/obras/interiores/granvia/img1.jpeg",
+                "img/obras/interiores/granvia/img2.jpeg",
+                "img/obras/interiores/granvia/img3.jpeg",
+                "img/obras/interiores/granvia/img4.jpeg",
+                "img/obras/interiores/granvia/img5.jpeg",
+                "img/obras/interiores/granvia/img6.jpeg",
+                "img/obras/interiores/granvia/img7.jpeg",
+                "img/obras/interiores/granvia/img8.jpeg",
+                "img/obras/interiores/granvia/img9.jpeg",
+                "img/obras/interiores/granvia/img10.jpeg",
+                "img/obras/interiores/granvia/img11.jpeg",
+                "img/obras/interiores/granvia/img12.jpeg",
+                "img/obras/interiores/granvia/img14.jpeg",
+                "img/obras/interiores/granvia/img15.jpeg",
+                "img/obras/interiores/granvia/img16.jpeg",
+                "img/obras/interiores/granvia/img17.jpeg",
+                "img/obras/interiores/granvia/img18.jpeg",
+                "img/obras/interiores/granvia/img19.jpeg",
+                "img/obras/interiores/granvia/img20.jpeg"
+            ]
+        },
+        {
+            "id": 16,
+            "name": "Vivienda PG",
+            "nameServicio": "Reformas e interiores",
+            "categoria": "interior",
+            "imagenPrincipal": "img/obras/interiores/prado/imgPrincipal.jpeg",
+            "listaImagenes": [
+                "img/obras/interiores/prado/imgPrincipal.jpeg",
+                "img/obras/interiores/prado/img1.jpeg",
+                "img/obras/interiores/prado/img2.jpeg",
+                "img/obras/interiores/prado/img3.jpeg",
+                "img/obras/interiores/prado/img4.jpeg",
+                "img/obras/interiores/prado/img5.jpeg",
+                "img/obras/interiores/prado/img6.jpeg",
+                "img/obras/interiores/prado/img7.jpeg",
+                "img/obras/interiores/prado/img8.jpeg",
+                "img/obras/interiores/prado/img9.jpeg"
+            ]
+        },
+        {
+            "id": 17,
+            "name": "Vivienda AG",
+            "nameServicio": "Reformas e interiores",
+            "categoria": "interior",
+            "imagenPrincipal": "img/obras/interiores/arquebisbe/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/interiores/arquebisbe/imgPrincipal.jpg",
+                "img/obras/interiores/arquebisbe/img1.jpg",
+                "img/obras/interiores/arquebisbe/img2.jpg",
+                "img/obras/interiores/arquebisbe/img3.jpg",
+                "img/obras/interiores/arquebisbe/img4.jpg",
+                "img/obras/interiores/arquebisbe/img5.jpg",
+                "img/obras/interiores/arquebisbe/img6.jpg",
+                "img/obras/interiores/arquebisbe/img7.jpg",
+                "img/obras/interiores/arquebisbe/img8.jpg",
+                "img/obras/interiores/arquebisbe/img9.jpg",
+                "img/obras/interiores/arquebisbe/img10.jpg",
+                "img/obras/interiores/arquebisbe/img11.jpg"
+            ]
+        },
+        {
+            "id": 18,
+            "name": "Clínica Molto",
+            "nameServicio": "Reformas e interiores",
+            "categoria": "interior",
+            "imagenPrincipal": "img/obras/interiores/molto-clinica/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/interiores/molto-clinica/imgPrincipal.jpg",
+                "img/obras/interiores/molto-clinica/img1.jpg",
+                "img/obras/interiores/molto-clinica/img2.jpg",
+                "img/obras/interiores/molto-clinica/img3.jpg",
+                "img/obras/interiores/molto-clinica/img5.jpg",
+                "img/obras/interiores/molto-clinica/img6.jpg",
+                "img/obras/interiores/molto-clinica/img7.jpg",
+                "img/obras/interiores/molto-clinica/img8.jpg",
+                "img/obras/interiores/molto-clinica/img9.jpg",
+                "img/obras/interiores/molto-clinica/img10.jpg"
+            ]
+        },
+        {
+            "id": 19,
+            "name": "Casa DC",
+            "nameServicio": "Obra nueva",
+            "categoria": "interior",
+            "imagenPrincipal": "img/obras/interiores/denia/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/interiores/denia/imgPrincipal.jpg",
+                "img/obras/interiores/denia/img1.jpg",
+                "img/obras/interiores/denia/img2.jpg",
+                "img/obras/interiores/denia/img3.jpg",
+                "img/obras/interiores/denia/img4.jpg"
+            ]
+        },
+        {
+            "id": 20,
+            "name": "ermita",
+            "nameServicio": "Obra civil",
+            "categoria": "ObraCivil",
+            "imagenPrincipal": "img/obras/obra-civil/ermita/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/obra-civil/ermita/imgPrincipal.jpg",
+                "img/obras/obra-civil/ermita/img1.jpg",
+                "img/obras/obra-civil/ermita/img2.jpg",
+                "img/obras/obra-civil/ermita/img3.jpg",
+                "img/obras/obra-civil/ermita/img4.jpg",
+                "img/obras/obra-civil/ermita/img5.jpg",
+                "img/obras/obra-civil/ermita/img6.jpg",
+                "img/obras/obra-civil/ermita/img7.jpg",
+                "img/obras/obra-civil/ermita/img8.jpg",
+                "img/obras/obra-civil/ermita/img9.jpg"
+            ]
+        },
+        {
+            "id": 21,
+            "name": "Padel alfauir",
+            "nameServicio": "Obra civil",
+            "categoria": "ObraCivil",
+            "imagenPrincipal": "img/obras/obra-civil/padel_alfauir/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/obra-civil/padel_alfauir/imgPrincipal.jpg"
+            ]
+        },
+        {
+            "id": 22,
+            "name": "Padel atzaneta",
+            "nameServicio": "Obra civil",
+            "categoria": "ObraCivil",
+            "imagenPrincipal": "img/obras/obra-civil/padel_atzaneta/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/obra-civil/padel_atzaneta/imgPrincipal.jpg",
+                "img/obras/obra-civil/padel_atzaneta/img2.jpg"
+            ]
+        },
+        {
+            "id": 23,
+            "name": "Patio colegio abc",
+            "nameServicio": "Obra civil",
+            "categoria": "ObraCivil",
+            "imagenPrincipal": "img/obras/obra-civil/patio-colegio_abc/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/obra-civil/patio-colegio_abc/imgPrincipal.jpg",
+                "img/obras/obra-civil/patio-colegio_abc/img1.jpg"
+            ]
+        },
+        {
+            "id": 24,
+            "name": "Patio colegio abc",
+            "nameServicio": "Obra civil",
+            "categoria": "ObraCivil",
+            "imagenPrincipal": "img/obras/obra-civil/pista_bellreguard/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/obra-civil/pista_bellreguard/imgPrincipal.jpg"
+            ]
+        },
+        {
+            "id": 25,
+            "name": "Polideportivo Alqueria",
+            "nameServicio": "Obra civil",
+            "categoria": "ObraCivil",
+            "imagenPrincipal": "img/obras/obra-civil/polideportivo_alqueria/imgPrincipal.jpg",
+            "listaImagenes": [
+                "img/obras/obra-civil/polideportivo_alqueria/imgPrincipal.jpg",
+                "img/obras/obra-civil/polideportivo_alqueria/img1.jpg",
+                "img/obras/obra-civil/polideportivo_alqueria/img2.jpg",
+                "img/obras/obra-civil/polideportivo_alqueria/img3.jpg"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Obresa | Sobre Obresa</title>
+    <link rel="icon" type="image/png" href="img/home/logo.png">
+    <meta name="author" content="Josep Fayos Miñana">
+    <meta name="keywords" content="obresa, construcción, gandia, reformas, rehabilitacion, interiores, franquicias, hosteleras">
+    <meta name="description" content="Empresa de construcción líder en la safor con las técnicas más avanzadas en la ejecución de sus obras.">
+    <meta property="og:image" content="img/home/logo.png">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css" />
+    <!-- Font Awesome 5.4.1 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous" />
+    <!-- Tailswinds -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- VueJS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- Lodash -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/porfolio.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <header class="header--porfolio">
+            <nav class="menu">
+                <div class="logo--header">
+                    <img src="img/home/logo.png" alt="Logo de Obresa">
+                </div>
+                <!-- NAV BAR BUTTON -->
+                <button class="nav-bar" @click="isNavBarCerrado = !isNavBarCerrado"><i class="fas fa-bars"></i></button>
+                <!-- ul ENLACES -->
+                <ul class="menu-enlaces" :class="{menuEnlacesAbierto: isNavBarCerrado}">
+                    <li><a href="index.php">Inicio</a></li>
+                    <li><a href="porfolio.html">Portafolio</a></li>
+                    <li><a href="index.php">Contacto</a></li>
+                    <li><a href="index.php">Noticias</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="porfolio">
+                <div class="porfolio--tittle">
+                    <h1>Sobre Obresa<br> <span>Construyendo tu futuro</span></h1>
+                    <p>Fundada en 2012 por un grupo de profesionales con una dilatada experiencia en el sector de la
+                        construcción.</p>
+                </div>
+            </section>
+            <section class="obras-explicacion">
+                <div class="obra-publica">
+                    <a href="porfolio.html" class="obra-publica--icono" @click="filtro = 'ObraCivil'">
+                        <i class="fas fa-circle circle-medio"></i>
+                        <span href="#">Obra civil</span>
+                    </a>
+                    <p>
+                        El sector de la obra pública ha sido la línea de negocio tradicional de la empresa, que cuenta
+                        con
+                        una solvencia
+                        reconocida a nivel autonómico en la ejecución de obra civil y ediﬁcación pública.
+                    </p>
+                    <div class="obra-publica--images">
+                        <img src="img/obras/obra-civil/Muro_beniarjo/imgPrincipal.jpg" alt="Imagen de Obresa">
+                        <img src="img/obras/obra-civil/ermita/imgPrincipal.jpg" alt="Imagen de Obresa">
+                        <img src="img/obras/obra-civil/pista_bellreguard/imgPrincipal.jpg" alt="Imagen de Obresa">
+                    </div>
+                </div>
+                <div class="obra-fachadas">
+                    <a href="porfolio.html" class="obra-fachadas--icono" @click="filtro = 'ObraCivil'">
+                        <i class="fas fa-circle circle-medio"></i>
+                        <span href="#">Rehabilitación de fachadas</span>
+                    </a>
+                    <p>
+                        Con una división especializada de la plantilla propia de la empresa, compuesta por técnicos y
+                        personal de obra
+                        especíﬁco experto en la rehabilitación estructural y de fachadas de ediﬁcios, especialmente las
+                        sometidas a condiciones
+                        climatológicas agresivas (ambientes marinos, actividades industriales intensivas, etc.).
+                    </p>
+                    <div class="obra-fachadas--images">
+                        <img src="img/obras/fachadas/cancun4/junio/imgPrincipal.jpg" alt="Imagen de Obresa">
+                        <img src="img/obras/fachadas/cancun7/faseiii/img2.jpg" alt="Imagen de Obresa">
+                        <img src="img/obras/fachadas/cancun4/junio/img6.jpg" alt="Imagen de Obresa">
+                    </div>
+                </div>
+                <div class="obra-interior">
+                    <a href="porfolio.html" class="obra-interior--icono" @click="filtro = 'ObraCivil'">
+                        <i class="fas fa-circle circle-medio"></i>
+                        <span href="#">Reformas e interiores</span>
+                    </a>
+                    <p>
+                        Ofrecemos un servicio de gestión integral del proyecto, desde su concepción y diseño, hasta su
+                        tramitación,
+                        construcción y ﬁnalización bajo la modalidad de “llaves en mano”.
+                    </p>
+                    <div class="obra-interior--images">
+                        <img src="img/obras/interiores/colomets/imgPrincipal.jpg" alt="Imagen de Obresa">
+                        <img src="img/obras/interiores/arquebisbe/imgPrincipal.jpg" alt="Imagen de Obresa">
+                        <img src="img/obras/interiores/granvia/img1.jpeg" alt="Imagen de Obresa">
+                    </div>
+                </div>
+                <div class="obra-franquicias">
+                    <a href="porfolio.html" class="obra-franquicias--icono" @click="filtro = 'ObraCivil'">
+                        <i class="fas fa-circle circle-medio"></i>
+                        <span href="#">Franquicias hosteleras</span>
+                    </a>
+                    <p>
+                        Ha sido la apuesta más ambiciosa de la empresa en los últimos años y la que ha conseguido dar
+                        proyección nacional a
+                        Obresa. La homologación de la constructora por parte del mayor grupo de hostelería de España
+                        (Grupo Zena – Alsea) para
+                        la ejecución de locales comerciales de sus enseñas insignia <strong>Foster's Hollywood</strong>
+                        y <strong>Domino's Pizza</strong>
+                        por toda España (incluidas las islas
+                        Baleares y Canarias) ha propiciado un salto cualitativo y organizativo de la mercantil de
+                        manera que nos permite en la
+                        actualidad acometer proyectos de envergadura por toda España y ampliar así nuestro horizonte de
+                        mercado.
+                    </p>
+                    <div class="obra-franquicias--images">
+                        <img src="img/obras/franquicias/dominos-Vinaros/imgPrincipal.jpg" alt="Imagen de Obresa">
+                        <img src="img/obras/franquicias/dominos-Vinaros/img10.jpg" alt="Imagen de Obresa">
+                        <img src="img/obras/franquicias/fooster-tenerife/imgPrincipal.jpg" alt="Imagen de Obresa">
+                    </div>
+                </div>
+                <div class="obra-industrial">
+                    <a href="porfolio.html" class="obra-industrial--icono" @click="filtro = 'ObraCivil'">
+                        <i class="fas fa-circle circle-medio"></i>
+                        <span href="#">Obra industrial</span>
+                    </a>
+                    <p>
+                        Ante un nicho de mercado en auge progresivo, la empresa ha destinado sendos equipos de manera
+                        permanente para efectuar
+                        tareas de mantenimiento industrial, de manera que ofrece servicio, eﬁcacia y rapidez ante
+                        cualquier incidencia, no sólo
+                        en tareas de conservación ordinarias, sino también para la proyección de naves de nueva
+                        ejecución o ampliación de las
+                        existentes.
+                    </p>
+                </div>
+                <div class="localizacion">
+                    <a href="porfolio.html" class="localizacion--icono" @click="filtro = 'ObraCivil'">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span href="#">Localización</span>
+                    </a>
+                    <p>
+                        Las instalaciones centrales de la empresa se emplazan en un ediﬁcio de oﬁcinas, un recinto de
+                        estacionamiento y una
+                        nave de almacenamiento, sitos en la <a href="">Av de Valencia, núms. 37 y 52, de Gandía
+                            (Valencia)</a>.
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer--logo"><img src="img/home/logo.png" alt="Logo de Obresa" /></div>
+            <div class="footer--info">
+                <h3>Información sobre obresa</h3>
+                <a href="#">Aviso de privacidad</a>
+                <a href="http://www.jyjwebdesign.com/">Desarrollador</a>
+                <a href="#">Preguntas frecuentes</a>
+            </div>
+            <div class="footer--contacto">
+                <h3>Contacto</h3>
+                <span><i class="fas fa-phone"></i><a href="tel:+34 962 851 700">962 851 700</a></span>
+                <span><i class="fas fa-envelope"></i><a href="mailto:info@obresa.es">info@obresa.es</a></span>
+                <span><i class="fas fa-map-marker-alt"></i><a href="https://goo.gl/maps/F8mG1Af8rTR2">Av. de Valencia
+                        37, Gandía,
+                        Valencia, 46701</a></span>
+            </div>
+            <div class="footer--redes">
+                <h3>Redes sociales</h3>
+                <a href="https://www.facebook.com/Obresa/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/obresaconstructora/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
